@@ -1,0 +1,68 @@
+
+
+.footer{
+    padding-top: 100px;
+    color: var(--main-color);
+}
+
+.footer > .container .all{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.footer > .container .all > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.footer > .container .all  .links > div{
+    display: flex;
+    gap: 90px;
+    flex-wrap: wrap;
+
+}
+
+.footer > .container .all .follow{
+
+}
+
+
+.footer > .container .all .follow .social{
+    display: flex;
+    gap: 10px;
+    opacity: 0.3;
+}
+.footer > .container .all .follow .subscription{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.footer > .container .all .follow .subscription input{
+    border: 1px solid rgba(0, 0, 0, 0.228);
+    padding: 10px;
+    border-left: none;
+
+    
+}
+
+.footer > .container .all .follow .subscription button{
+    padding: 12px 35px;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    
+}
+
+.footer .foot{
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 0px;
+}

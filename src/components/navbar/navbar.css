@@ -1,0 +1,151 @@
+
+.nav{
+    padding: 30px 0px;
+    position: relative;
+
+}
+.nav .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nav .container > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .container > div .fore{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .container > div .fore i{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 0;
+}
+.nav .container .show{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav .show  .box{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav .show .lang{
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+
+.nav .show .search {
+    position: relative;
+    padding: 0px 15px;
+}
+.nav .show .search img{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav .show .search input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: white;
+}
+
+
+.nav .show .calendar{
+    display: flex;
+    gap: 10px;
+    color: var(--sec-color);
+
+}
+
+::placeholder {
+    color: white;
+}
+
+.show .info{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.nav ul{
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    padding-top:23px ;
+    padding-bottom: 14px;
+    padding-right: 40px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+
+}
+
+
+.nav ul li a{
+    padding: 0px 4px;
+    display: block;
+}
+
+
+
+.nav ul li a{
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav ul li:first-of-type a{
+    color: var(--sec-color);
+}
+
+@media(max-width:991px){
+    .nav .container > div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nav ul{
+        position: fixed;
+        flex-direction: column;
+        padding: 0;
+        padding: 10px;
+        justify-content: center;
+        top: 90px;
+        right: 100%;
+        border-radius: 0;
+        width: 400px;
+        text-align: center;
+        height: 100vh;
+        transition: 0.6s;
+        z-index: 888888;
+        opacity: 0;
+        height: 100vh;
+        width: 100vw;
+        
+    }
+
+    .nav ul.active{
+        right: 0;
+        opacity: 1;
+
+    }
+
+    .nav .container > div .fore i{
+
+        opacity: 1;
+    }
+
+}

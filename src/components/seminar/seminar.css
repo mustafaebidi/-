@@ -1,0 +1,123 @@
+
+
+
+.seminar{
+    padding: 200px 0px;
+}
+
+.seminar .container::before{
+
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    background-image: url("../../../public/image/Group 170.png");
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+
+}
+
+
+.seminar .container{
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 100px;
+    position: relative;
+    align-items: center;
+}
+
+.seminar .container .right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.seminar .container .right h2{
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 36px;
+
+}
+.seminar .container .right > span {
+    color: var(--sec-color);
+    font-weight: 700;
+    
+}
+.seminar .container .right > p
+{
+    max-width: 690px;
+}
+
+
+.seminar .container .left{
+    background-color:var(--main-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+
+
+}
+
+.seminar .container .left .head{
+    background-color: var(--sec-color);
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.seminar .container .left .head h3{
+    font-size: 21px;
+    font-weight: 700;
+}
+.seminar .container .left .head .social{
+    display: flex   ;
+    gap: 20px;
+    color: white;
+}
+.seminar .container .left .head .social a{
+
+    color: white;
+}
+
+.seminar .container .left .body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.seminar .container .left .body .type{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+}
+
+.seminar .container .left .body .type h3{
+    color: hsla(0, 0%, 100%, 1);
+
+}
+
+.seminar .container .left .body .type h5
+{
+    color:rgba(255, 255, 255, 0.203);
+}
+
+@media(max-width:991px){
+    .seminar .container{
+        grid-template-columns: 1fr ;
+    }
+    
+
+}

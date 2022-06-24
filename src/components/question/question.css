@@ -1,0 +1,153 @@
+
+
+.question{
+    padding: 0px 0px;
+    position: relative;
+}
+
+.question .container::before{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 650px;
+    height: 420px;
+    z-index: -1;
+    bottom: 10px;
+
+
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    z-index: -1;
+
+}
+
+
+
+.question .container::after{
+    content: "";
+    position: absolute;
+    width: 713px;
+    height: 571px;
+    z-index: -1;
+    bottom: 10px;
+    background-image: url("../../../public/image/Object.png");
+
+}
+
+
+
+.question .container{
+    display: grid;
+    grid-template-columns: 1fr 54% ;
+    align-items: center;
+}
+
+.question .container .img-con{
+    position: relative;
+}
+
+.question .container .img-con .background{
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    top: 0px;
+    width: 713px;
+    height: 571px;
+}
+
+
+.question .container  .widget{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+
+}
+
+.question .container > div img{
+    max-width: 100%;
+}
+
+.question .container  .widget .head{
+   display: flex;
+   gap: 15px;
+   align-items: flex-start;
+} 
+.question .container  .widget .head h3{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.question .container  .widget .head h5{
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--main-color);
+    opacity: 0.6;
+}
+
+
+.question .container  .widget .form {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+
+.question .container  .widget .form textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    padding: 20px;
+    border: 2px solid #303a6c22;
+    border-radius: 5px;
+}
+
+.question .container  .widget .form p {
+    color:hsla(25, 89%, 66%, 1)
+}
+
+.question .container  .widget .form .send{
+    background-color: var(--main-color);
+    opacity: 0.3;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 12px 81px;
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width:1199px){
+    .question .container .img-con{
+        display: none;
+    }
+    .question .container::after{
+        display: none;
+    }
+    .question .container::before{
+        display: none;
+    }
+
+    
+    .question .container{
+        grid-template-columns: 1fr
+    }
+
+
+
+}
+
+@media(max-width:1399px){
+    .question .container::before{
+        width: 620px;
+        height: 380px;
+    }
+
+
+
+}
